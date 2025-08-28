@@ -1,4 +1,7 @@
 site_name: Test Site
 site_url: http://https://nhbsystems.github.io/test_site
+nav:
+  - Home: index.md
+  - About: about.md
 theme:
     name: material
