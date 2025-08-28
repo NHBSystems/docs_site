@@ -1,0 +1,4 @@
+site_name: Test Site
+site_url: http://https://nhbsystems.github.io/test_site
+theme:
+    name: material
