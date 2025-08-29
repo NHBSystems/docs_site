@@ -5,7 +5,7 @@ nav:
   #- About: about.md
   #- Reading Analog Sensors: analog_sensors.md
   - Docs:
-    - 6 channel, 24 bit Analog Featherwing: 6-channel-featherwing.md
+    - 6 channel, 24 bit Analog Featherwing: 6-channel-24-bit-featherwing.md
     - JLogger 601: jlogger-601.md
   - Blog:
     #- blog/index.md
