@@ -1,5 +1,5 @@
 site_name: Docs & Blog
-site_url: https://nhbsystems.github.io/docs_site
+site_url: https://nhbsystems.com/docs_site
 nav:
   - Home: index.md
   #- About: about.md
