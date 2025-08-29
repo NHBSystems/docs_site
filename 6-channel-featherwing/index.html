@@ -1,0 +1,989 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://https:/nhbsystems.github.io/test_site/6-channel-featherwing/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../jlogger-601/">
+      
+      
+      <link rel="icon" href="../img/NHB_Site_Icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>6 channel, 24 bit Analog Featherwing - Docs & Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-channel-24-bit-featherwing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Docs &amp; Blog" class="md-header__button md-logo" aria-label="Docs & Blog" data-md-component="logo">
+      
+  <img src="../img/logo_title_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs & Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6 channel, 24 bit Analog Featherwing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Docs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../analog_sensors/" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Docs &amp; Blog" class="md-nav__button md-logo" aria-label="Docs & Blog" data-md-component="logo">
+      
+  <img src="../img/logo_title_white.png" alt="logo">
+
+    </a>
+    Docs & Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Docs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    6 channel, 24 bit Analog Featherwing
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    6 channel, 24 bit Analog Featherwing
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pinouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pinouts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pinouts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#featherwing-pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      FeatherWing Pins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensor-input-pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor Input Pins
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing the Library
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-example-sketch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running the Example Sketch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-modifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Modifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Info
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jlogger-601/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JLogger 601
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analog_sensors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reading Analog Sensors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pinouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pinouts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pinouts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#featherwing-pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      FeatherWing Pins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensor-input-pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor Input Pins
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing the Library
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-example-sketch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running the Example Sketch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-modifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Modifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Info
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="6-channel-24-bit-featherwing">6 Channel, 24-bit FeatherWing</h1>
+<!-- *By Jaimy | November 19, 2020* -->
+
+<p><img alt="6 Channel Full-Bridge Featherwing" src="../img/6ch-FB-FW_with_screw_terminals.jpg" /></p>
+<h3 id="description">Description</h3>
+<p>This is a simple but versatile <a href="https://learn.adafruit.com/adafruit-feather/feather-specification">Feather</a> compatible board. It uses an <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD7794_7795.pdf">AD7794</a>, a very robust 6 channel 24 bit ADC. It's a relatively slow converter (470 Hz Max – single channel), but this board is really suited for lower power, monitoring type applications and can consume as little as 2 μA in standby. It has an on-board 2.5 V regulator for excitation voltage and is designed primarily to read load cells and pressure gauges. However, it can also be used to read any ratiometric sensor (such as potentiometers), thermocouples, or any 0 – 3.3 V signal.</p>
+<h4 id="specs">Specs</h4>
+<ul>
+<li>RMS noise down to 40 nV at lowest data rate (4.17 Hz)</li>
+<li>Power-down current: 1 μA maximum (AD7794 chip)</li>
+<li>Low noise, programmable gain, instrumentation amplifier</li>
+<li>Band gap reference with 4 ppm/°C drift typical</li>
+<li>Simultaneous 50 Hz/60 Hz rejection</li>
+<li>Update rate: 4.17 Hz to 470 Hz</li>
+<li>Six differential analog inputs</li>
+<li>4 pin connections with excitation and ground for each channel</li>
+<li>On board 2.5v LDO with enable pin broken out to turn off excitation for low power applications</li>
+</ul>
+<p>This guide assumes you are familiar with the basics of working with the Arduino IDE and using Arduino compatible boards. While this is designed as a "FeatherWing" board, it can also be used with other Arduino boards, either in a breadboard, or directly wired.</p>
+<hr />
+<h3 id="pinouts">Pinouts</h3>
+<h4 id="featherwing-pins">FeatherWing Pins</h4>
+<p><img alt="FeatherWing pinout diagram" src="../img/2019-07-27T21_01_39.213Z-FB_FW_Pins_Med-804x1024.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pin 2</strong></td>
+<td>3.3V Power In</td>
+</tr>
+<tr>
+<td><strong>Pin 4</strong></td>
+<td>Ground</td>
+</tr>
+<tr>
+<td><strong>Pin 11</strong></td>
+<td>SPI SCLK</td>
+</tr>
+<tr>
+<td><strong>Pin 12</strong></td>
+<td>SPI MOSI</td>
+</tr>
+<tr>
+<td><strong>Pin 13</strong></td>
+<td>SPI MISO</td>
+</tr>
+<tr>
+<td><strong>Pin 21</strong></td>
+<td>EX Enable (depends on jumper)</td>
+</tr>
+<tr>
+<td><strong>Pin 22</strong></td>
+<td>SPI CS (default)</td>
+</tr>
+</tbody>
+</table>
+<p><em>All other pins are NC (No connection)</em></p>
+<ul>
+<li>The <strong>CS Jumper</strong> determines if SPI Chip Select is connected to <strong>Pin 22</strong>. If cut, you must wire the CS wire pad to another pin.</li>
+<li>The <strong>EX Enable</strong> jumper sets excitation mode. The default setting is 2.5 volt excitation voltage is always ON. If you cut the jumper trace, the excitation voltage is controlled by the wire pad. If you cut the jumper trace and solder the other jumper position closed, the excitation voltage will be controlled by pin 21.</li>
+</ul>
+<h4 id="sensor-input-pins">Sensor Input Pins</h4>
+<p><img alt="Sensor connections diagram" src="../img/Sensor_Connections_3.png" /></p>
+<p>For each input there is a group of 4 pins that follows the following convention.</p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GND</strong></td>
+<td>Signal ground</td>
+</tr>
+<tr>
+<td><strong>EX+</strong></td>
+<td>2.5V excitation voltage</td>
+</tr>
+<tr>
+<td><strong>S-</strong></td>
+<td>Signal (-)</td>
+</tr>
+<tr>
+<td><strong>S+</strong></td>
+<td>Signal (+)</td>
+</tr>
+</tbody>
+</table>
+<p>Note that the input group pin order is rotated around the board, not mirrored. This is to accommodate the use of polarized connectors for sensor cables.</p>
+<h3 id="installing-the-library">Installing the Library</h3>
+<p>An Arduino library for using the AD7798 ADC chip is available through the Arduino library manager. To install open up the library manager and type "NHB_AD7794" into the search bar. (You probably won't have to type more than the <em>nhb</em> part)</p>
+<p><img alt="Arduino Library Manager screenshot" src="../img/Screenshot_2020-11-19_16-38-12_Crop.png" /></p>
+<p>If you prefer to install manually you can download or clone the repository from here: <a href="https://github.com/NHBSystems/NHB_AD7794">https://github.com/NHBSystems/NHB_AD7794</a> This is also where you can find the API documentation for the library.</p>
+<h3 id="running-the-example-sketch">Running the Example Sketch</h3>
+<p>From File-&gt;Examples select the Read_6Ch example</p>
+<p><img alt="Example selection in Arduino IDE" src="../img/6ChFW_Examp_Select.png" /></p>
+<p>Once opened, you will need to change the pin assignments to suit your board (unless you happen to be using a Feather M0 Basic)</p>
+<p><img alt="Pin definitions highlighted in code" src="../img/6ChFW_Examp_PinsDefs_Highlight.png" /></p>
+<p>That is probably all you have to change for the example to run, however there are a couple of other things you may want to change depending on your setup.</p>
+<h3 id="other-modifications">Other Modifications</h3>
+<p>The example waits for a serial connection before starting. You can comment out the following line if that is not what you want.</p>
+<pre><code class="language-javascript">while(!Serial);
+</code></pre>
+<p>If your application doesn't use the EX Enable pin, you can probably get rid of these 2 lines.</p>
+<pre><code class="language-javascript">pinMode(EX_EN_PIN, OUTPUT);
+digitalWrite(EX_EN_PIN,LOW);  //low  = 2.5 Vex ON
+</code></pre>
+<p>Finally, depending on what you are trying to measure, you may want to edit the following to suit your needs. The default settings are good for reading load cells or strain gauges as fast as possible.</p>
+<pre><code class="language-javascript">adc.setUpdateRate(470);
+
+for(int i=0; i &lt; 6; i++){
+  adc.setBipolar(i,true);
+  //delay(2);
+  adc.setGain(i, 128);
+  //delay(2);
+  adc.setEnabled(i,true);
+  //delay(2);
+}
+</code></pre>
+<p><strong>setUpdateRate()</strong> Sets the output data rate and filtering for all channels. It is the rate at which a single channel is converted and filtered. This is not the sampling rate you can expect to see if reading multiple channels. The actual output rate (especially if reading all 6 channels) will be significantly slower. The example setting of 470Hz is the fastest rate, but it may result in noisier readings. A setting of 19.6 will enable 90 dB of 60 Hz noise rejection. The following table shows a subset of valid settings. Refer to the data sheet for the full list, however these are the only ones I ever use.</p>
+<table>
+<thead>
+<tr>
+<th>Freq (Hz)</th>
+<th>Settling time (ms)</th>
+<th>Noise Rejection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>470</td>
+<td>4</td>
+<td>—</td>
+</tr>
+<tr>
+<td>19.6</td>
+<td>101</td>
+<td>90 dB (60 Hz only)</td>
+</tr>
+<tr>
+<td>16.7</td>
+<td>120</td>
+<td>90 dB (50 Hz only)</td>
+</tr>
+<tr>
+<td>12.5</td>
+<td>200</td>
+<td>80 dB (50/60 Hz)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>300</td>
+<td>69 dB (50/60 Hz)</td>
+</tr>
+<tr>
+<td>4.17</td>
+<td>480</td>
+<td>69 dB (50/60 Hz)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>setGain(ch, gain)</strong> Sets the programmable gain amplifier for the specified channel. Valid values are 1, 2, 4, 8, 16, 32, 64, and 128. Higher gain = more sensitive, but smaller measurement range.</p>
+<p><strong>setBipolar(ch, isBipolar)</strong> Sets whether the given channel is converted as a bipolar signal (+/- 1.25V), or a unipolar (0V-2.5V) signal. If you are reading load cells, strain gauges, or <em>thermocouples, you want bipolar. If you are reading a potentiometer or thermistor, you probably want unipolar. </em><strong>NOTE: Bipolar mode does not mean the device can tolerate voltages that are negative with respect to GND!</strong>*</p>
+<p><strong>setEnabled(ch, isEnabled)</strong> Sets whether or not (you guessed it) the channel is enabled. If you are using the channel, it should be enabled, pretty straightforward.</p>
+<p><em>* Reading thermocouples requires soldering the bottom side jumpers for the desired channel closed to enable the 1M bias resistors. While it is technically possible to read thermocouples on channels 0 through 2 with the right settings, I find that the results are a little noisy.</em></p>
+<h3 id="additional-info">Additional Info</h3>
+<p>More details about the library API can be found in the Readme of the GitHub repo located here: <a href="https://github.com/NHBSystems/NHB_AD7794">https://github.com/NHBSystems/NHB_AD7794</a></p>
+<p>There is a second example included with the library named <em>Read_Thermocouple.ino</em> that shows how to read a Type K thermocouple including functions to handle the scaling and linearization. <em>Remember that you need to solder the bias resistor jumpers closed on the channel you are reading the thermocouple on.</em></p>
+<p><a href="https://www.tindie.com/stores/nhbsystems/"><img alt="I sell on Tindie" src="../img/tindie-mediums.png" /></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.path"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

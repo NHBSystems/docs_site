@@ -1,0 +1,922 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://https:/nhbsystems.github.io/test_site/analog_sensors/">
+      
+      
+        <link rel="prev" href="../jlogger-601/">
+      
+      
+      
+      <link rel="icon" href="../img/NHB_Site_Icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Reading Analog Sensors - Docs & Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reading-analog-sensors" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Docs &amp; Blog" class="md-header__button md-logo" aria-label="Docs & Blog" data-md-component="logo">
+      
+  <img src="../img/logo_title_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs & Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reading Analog Sensors
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../6-channel-featherwing/" class="md-tabs__link">
+          
+  
+  
+  Docs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Docs &amp; Blog" class="md-nav__button md-logo" aria-label="Docs & Blog" data-md-component="logo">
+      
+  <img src="../img/logo_title_white.png" alt="logo">
+
+    </a>
+    Docs & Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Docs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-channel-featherwing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6 channel, 24 bit Analog Featherwing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jlogger-601/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JLogger 601
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Reading Analog Sensors
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reading Analog Sensors
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wheatstone-bridge-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wheatstone Bridge Sensors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wheatstone Bridge Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-bridge-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Bridge Sensors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quarter-bridge-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quarter Bridge Sensors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thermocouples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thermocouples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#potentiometers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Potentiometers
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wheatstone-bridge-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wheatstone Bridge Sensors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wheatstone Bridge Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-bridge-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Bridge Sensors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quarter-bridge-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quarter Bridge Sensors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thermocouples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thermocouples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#potentiometers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Potentiometers
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="reading-analog-sensors">Reading Analog Sensors</h1>
+<p><em>By Jaimy | March 28, 2021</em></p>
+<p>This is a quick guide on how to connect various analog sensors to the <a href="https://www.tindie.com/products/17170/">6 Channel, Full Bridge FeatherWing</a>. I'll try to give a little background on some of the sensor types, but this is not intended to be a detailed explanation of the underlying principles. Hopefully this will be enough to get you going in your potential application.</p>
+<h2 id="wheatstone-bridge-sensors">Wheatstone Bridge Sensors</h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Wheatstone_bridge">Wheatstone bridge</a> is a classic analog circuit for measuring an unknown resistance or perhaps more importantly, very small changes in resistance. Sensors that utilize Wheatstone bridges are usually referred to simply as "bridge" or "bridge output" sensors. They are most commonly associated with strain gauge based sensors, though they can also be used for other resistive sensors like RTDs and thermistors. For right now I will just focus on strain gauge circuits.</p>
+<p><img alt="Basic Wheatstone bridge Circuit" src="../img/Basic_Wheatstone_Bridge.png" />
+<em>Basic Wheatstone bridge Circuit</em></p>
+<h3 id="full-bridge-sensors">Full Bridge Sensors</h3>
+<p><em>-Standard (non-amplified) load cells, pressure gauges, etc.-</em></p>
+<p>The most common (and easiest to use) type of strain gauged bridge sensor is the <strong><em>full bridge</em></strong>. In this configuration, all 4 of the bridge resistance elements are contained in the sensor. The most common use of full bridge sensors are for load cells and pressure gauges. Generally in these sensors all bridge elements are active, meaning all four vary with external stimulus. However some special applications may have 2 or 3 passive <em>bridge completion</em> resistors and only 1 or 2 elements are active. Fortunately, for this type of sensor, it really doesn't matter how it's configured on the inside, they are all treated the same – as a full bridge sensor.</p>
+<p>The output signal of a full bridge sensor is a very small voltage that is fraction of the input, or <em>excitation</em> voltage. The expected output of a bridge sensor is usually stated as it's mV/V output (millivolts per volt of excitation), at the full scale of the sensor. For example, if you have a 100 lb. load cell, and it's stated output is 2.2 mV/V, it will read 2.2 mV for every volt of excitation, when 100 lbs. of force is applied to it. Common output values for bridge sensors range from 1 mV/V to 4 mV/V. These outputs are too small to read accurately with the built in ADCs on most microcontrollers, which is why we typically need something like the AD7794. It has a programable gain amplifier and 24 bits of resolution to accurately read such small voltages.</p>
+<p><em>Note: I have seen some cheap "load cells" out there that are actually only a </em><em>quarter bridge</em><em> or </em><em>half bridge</em><em> device. These need to be handled differently and will be discussed later.</em></p>
+<p>Wiring up a full bridge sensor to the FeatherWing is actually quite easy (it is the main thing it was designed for). The general configuration is 4 wires. Two wires for the excitation voltage (usually marked as EX+ and EX-) and two wires for the output signal (usually marked as S+ and S-). They can be wired directly into the 4 terminals of any of the six available sensor input channels as shown below. This is the same the same for a load cell, pressure gauge, or any other full bridge sensor. You can safely reverse the polarity of the output signal by swapping the S+ and S- leads.</p>
+<p><img alt="Bridge sensor connection to sensor input channels" src="../img/Full_Bridge_Wiring.png" />
+<em>Bridge sensor connection to sensor input channels</em></p>
+<p>There is often a shield wire too. Technically, the shield should be connected to a conductive enclosure if you have one. However if you don't have a conductive enclosure around your project, you may find that tying it into the GND connection helps with noise. In some circumstances though, it can actually create more problems (like if the load cell body at the other end is in contact with a different ground potential) so don't always assume that it will be better.</p>
+<p>We will need set the AD7794 to Bipolar mode. We will also want to set gain to 128, though some higher output sensors, or an very unbalanced bridge (large zero offset) may need it set to 64 to see the full output range.</p>
+<pre><code class="language-cpp">AD7794 adc(AD7794_CS, 4000000, 2.50);
+
+void setup() {
+   ...
+   adc.begin();
+   ...
+   int ch = 0;  //Channel bridge sensor is on
+   ad7794.setBipolar(ch, true);
+   ad7794.setGain(ch, 128);
+   ad7794.setEnabled(ch, true);
+   ...
+}
+</code></pre>
+<p>To read the sensor we first need to read the voltage</p>
+<pre><code class="language-cpp">float rawVolts = ad7794.read(ch);
+</code></pre>
+<p>And then we need to scale it. We will convert <em>rawVolts</em> to mV/V by multiplying by 1000, and dividing by the excitation voltage. Then we will multiply by the scaling factor that we can get from the mV/V rating of the load cell (or better yet, obtained from a calibration). We can use a simple function like below to handle this.</p>
+<pre><code class="language-cpp">float voltsToEngUnits(float vIn, float vEx, float scaleFactor){
+   float mVpV = (vIn * 1000) / vEx;
+   return mVpV * scaleFactor;
+ }
+</code></pre>
+<p>As an example, I have a small 10 lb. load cell I like to use when trying things out at my desk. It has a nominal rated output of 2 mV/V. In this case my scaling factor would be 5.00 (<strong>10 lb</strong>. <strong>/</strong> <em>2 mV/V</em> <strong>=</strong> 5.00 <strong>)</strong> and If I am using the AD7794 FeatherWing, the provided excitation voltage will be 2.50 V. So I can get my scaled output like this.</p>
+<pre><code class="language-cpp">const float vEx = 2.500;
+const float factor = 5.000;
+
+float loadLbs = voltsToEngUnits(rawVolts, vEx, factor);
+Serial.println(loadLbs);
+</code></pre>
+<p>Of course you usually wont have such nice round numbers in a real application.</p>
+<p><em>If you wanted to be really precise, or use an externally supplied excitation voltage, you could measure the excitation voltage on another channel (using the internal reference voltage) and use the measured voltage in the calculation. This is also how you could implement a 6 wire bridge connection that adds remote sense connections to compensate for voltage drop of the excitation voltage over very long cable runs. These are special cases and are beyond the scope of this guide, at least for right now.</em></p>
+<h3 id="quarter-bridge-sensors">Quarter Bridge Sensors</h3>
+<p>A quarter bridge (or 1/4 bridge) sensor consists of only a single resistive sensing element. The rest of the Wheatstone bridge circuit needs to be completed by <strong><em>bridge completion resistors</em></strong>. The most common 1/4 bridge sensor by far is a single <a href="https://en.wikipedia.org/wiki/Strain_gauge">strain gauge</a>, so that is what we'll focus on here.</p>
+<p><img alt="A strain gauge installed on a steel beam" src="../img/Strain_Gauge_Installed.jpg" />
+<em>A strain gauge installed on a steel beam</em></p>
+<p>Strain gauges come in 3 common resistances; 120 Ohm, 350 Ohm, and 1000 Ohm. I recommend the 1000 Ohm variety for 2 reasons. First, they draw less current. This is obviously good if your trying you're running off a battery, but also because strain gages can drift due to self heating. Less current means less self heating, and therefore less drift. The second reason is that 1000 Ohms is a common resistance. Bridge completion resistors need have extremely tight tolerances and (perhaps more importantly), they need to have extremely small temperature coeffects. It can be much easier to find an acceptable 1000 Ohm resistor than a 120 or 350. The latter can be hard to find, and you could end up paying quite a bit for a single resistor.</p>
+<p>Electrically speaking, the circuit is basically the same as the full bridge. In this case however, only one of the 4 resistances is a sensing element, and it is typically located at the end of some length of wire and bonded to the item you are testing. R1 through R3 are simply precision resistors.</p>
+<p><img alt="Quarter bridge circuit" src="../img/Quarter_Bridge_Wiring.png" />
+<em>Quarter bridge circuit</em></p>
+<p>Another subtle difference is that the S+ connection should be connected at the strain gauge, not at the bridge completion resistor. This is to reduce the effects of the strain gauge lead wire resistance on the bridge circuit. For more details about why this is done see <a href="http://www.vishaypg.com/docs/11092/tt612.pdf">Micro Measurements Tech Tip 612</a>.</p>
+<p>Here is another illustration of how things could be wired up. This is easy to do on a breadboard, but can also easily be done free-hanging and wrapped in heat shrink to make an adapter cable.</p>
+<p><img alt="Quarter bridge wiring diagram" src="../img/Quarter_Bridge_Wiring-3.png" /></p>
+<p>It's also worth noting that you could swap the strain gauge and R3 positions in the bridge. In fact that is the way this circuit is usually depicted (including in tech tip linked above). However, there is one thing I don't like about having the strain gauge on the high side of the bridge. If the gauge lead wire becomes cut or damaged, the excitation voltage could be shorted to GND. With the gauge on the low side of the bridge, the R3 resistance would still be in series if the leads are shorted.</p>
+<p>Now we have a full bridge and we can get the raw voltage reading the same way as the full bridge example above. We will want our channel set to bipolar, with a gain of 128.</p>
+<pre><code class="language-cpp">int ch = 0;  //Channel bridge sensor is on
+ad7794.setBipolar(ch, true);
+ad7794.setGain(ch, 128);
+ad7794.setEnabled(ch, true);
+</code></pre>
+<p>And then we read the voltage.</p>
+<pre><code class="language-cpp">float rawVolts = ad7794.read(ch);
+</code></pre>
+<p>The only difference is in the way that we scale the readings. Strain is measured as a ratio of elongation for a given <strong><em>gauge length</em></strong> (inch/inch, mm/mm) and is generally represented by an epsilon '<strong>𝜺</strong>'. However, because a strain value of 1.0 would actually be an extremely large amount of elongation, strain is usually expressed as <em>microstrain</em> or <strong><em>µ</em></strong>𝜺**.</p>
+<p>To scale our voltage reading to microstrain, we need to know the <strong><em>gauge factor</em></strong> of the gauge. The gauge factor is the ratio of change in resistance to a change in length (strain). Each package of strain gauges should come with a gauge factor. It is generally right around 2.</p>
+<p>To convert our raw voltage to microstrain we can use the following function:</p>
+<pre><code class="language-cpp">//Conversion for 1/4 bridge strain gauge
+float voltsToMicrostrain(float vIn, float vEx, float gFactor) {
+
+//First get volts per volt of excitation
+  float Vr = vIn / vEx;
+
+  //Calculate and return microstrain
+  return 1E6 * ((4 * Vr) / (gFactor * (1 +  (2 * Vr)))); 
+}
+</code></pre>
+<p>Then all we have to do is just call the function for any channels we are reading strain on.</p>
+<pre><code class="language-cpp">float strainVal = voltsToMicrostrain(rawVolts, 2.5, 2.00);
+</code></pre>
+<h2 id="thermocouples">Thermocouples</h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Thermocouple">thermocouple</a> is a type of temperature sensor that produces a small temperature-dependent voltage across a junction of two different metals. The metal alloys used determine critical characteristics such as output voltage (sensitivity), temperature range, and corrosion resistance. There are many standard alloy combinations that are designated simply as thermocouple "types", and are denoted by a single letter designation. For example, one of the most popular general use thermocouples is the Type K, which uses <a href="https://en.wikipedia.org/wiki/Chromel">chromel</a> and <a href="https://en.wikipedia.org/wiki/Alumel">alumel</a>, and has a working range of −200 °C to +1350 °C.</p>
+<p>Thermocouples are very easy to hook up to the AD7794 FeatherWing, at least electrically speaking. They are however much more complicated from a code/mathematical perspective.</p>
+<p>The first thing you need to do to read a thermocouple on the FeatherWing is solder some jumpers closed on the underside of the board. This connects a pair of 1M Ohm bias resistors to the S+ and S- inputs. There are 2 jumpers for each channel. Both jumpers must be soldered closed for each channel you plan to use with a thermocouple.</p>
+<p><img alt="Bottom side solder jumpers" src="../img/AD7794_FW_Bot.png" />
+<em>Bottom side solder jumpers</em></p>
+<p>The reason for this is that thermocouples can output a negative voltage (with respect to ground) and the AD7794 can't actually read a truly negative voltage. The "bipolar" range of the AD7794 is actually centered around the mid point between 0V and VCC. There is also an added benefit to using the bias resistors. If the thermocouple wire is cut or disconnected, the resistors will pull S+ to EXV and S- to GND. This can make it easy to detect that there is a problem with the connection.</p>
+<p><em>Technically speaking, you can read thermocouples on channels 0, 1, and 2 of the AD7794 without the external bias resistors by enabling on-chip bias resistors that are available on those channels. In my experience though, they seem to be a little noisier and less stable.</em></p>
+<p>Once the two jumpers are closed, we simply need to wire the thermocouple to the S+ and S- terminals. Thermocouple wire color codes can be a little strange. In the US a Type K thermocouple will probably have a red negative lead, and a yellow positive lead as depicted in the image below. However, many countries have there own standards. I have ordered some from amazon and received the German standard which is red positive, and green negative. Fortunately, if you get it backwards it wont hurt anything, and it will be pretty obvious (the indicated temperature will go down when heat is applied)</p>
+<p><img alt="Thermocouple connection" src="../img/TC_Wiring.png" />
+<em>Thermocouple connection</em></p>
+<p>As mentioned above, hooking up a thermocouple is easy, but they are a bit more complicated to read mathematically speaking. I am not going to dig into the math in this post, but detailed information about the calculations can be found <a href="https://en.wikipedia.org/wiki/Thermocouple">here</a>, <a href="https://instrumentationtools.com/thermocouple-calculations/">here</a>, and <a href="https://srdata.nist.gov/its90/type_k/kcoefficients.html">here</a>. Basically we need to approximate the NIST lookup tables for a given thermocouple type with a polynomial equation. But we also need to apply "cold junction" temperature compensation, which requires calculating an offset voltage by using a set of inverse coefficients.</p>
+<p>To get this done, at least for Type K thermocouples, we can use some nice little functions that I originally found in this <a href="https://github.com/annem/AD7193/blob/master/examples/AD7193_Thermocouple_Example/Thermocouple_Functions.ino">repository</a></p>
+<pre><code class="language-cpp">float Thermocouple_Ktype_VoltageToTempDegC(float voltage) {
+   // http://srdata.nist.gov/its90/type_k/kcoefficients_inverse.html
+   float coef_1[] = {0, 2.5173462e1, -1.1662878, -1.0833638, -8.9773540e-1};            // coefficients (in mV) for -200 to 0C, -5.891mv to 0mv
+   float coef_2[] = {0, 2.508355e1, 7.860106e-2, -2.503131e-1, 8.315270e-2};            // coefficients (in mV) for 0 to 500C, 0mv to 20.644mv
+   float coef_3[] = {-1.318058e2, 4.830222e1, -1.646031, 5.464731e-2, -9.650715e-4};    // whoa, that's hot...
+   int i = 5;  // number of coefficients in array
+   float temperature;
+
+   float mVoltage = voltage * 1e3;
+
+   if(voltage &lt; 0) {
+    temperature = power_series(i, mVoltage, coef_1);
+   }else if (voltage &gt; 20.644){
+    temperature = power_series(i, mVoltage, coef_3);
+   }else{
+    temperature = power_series(i, mVoltage, coef_2);
+   }
+
+   return(temperature);
+}
+
+float Thermocouple_Ktype_TempToVoltageDegC(float temperature) {
+  // https://srdata.nist.gov/its90/type_k/kcoefficients.html
+  float coef_1[] = {0, 0.3945013e-1, 0.2362237e-4, -0.3285891e-6, -0.4990483e-8};               // coefficients (in mV) for -270 to 0C, -5.891mv to 0mv
+  float coef_2[] = {-0.17600414e-1, 0.38921205e-1, 0.1855877e-4, -0.9945759e-7, 0.31840946e-9}; // coefficients (in mV) for 0 to 1372C, 0mv to ....
+  float a_coef[] = {0.1185976, -0.1183432e-3, 0.1269686e3};
+  int i = 5;  // number of coefficients in array
+
+  float mVoltage;
+  float a_power = a_coef[1] * pow((temperature - a_coef[2]), 2);
+  float a_results = a_coef[0] * exp(a_power);
+
+  if(temperature &lt; 0) {
+    mVoltage = power_series(i, temperature, coef_2) + a_results;
+  } else {
+    mVoltage = power_series(i, temperature, coef_1);
+  }
+
+  return(mVoltage / 1e3);
+}
+
+float power_series(int n, float input, float coef[])
+ {
+      //delay(10);      
+      int i;
+      float sum=coef[0];
+      for(i=1;i&lt;=(n-1);i++)
+           sum=sum+(pow(input, (float)i)*coef[i]);
+      return(sum);
+ }
+</code></pre>
+<p>If we paste these into our sketch, the rest becomes pretty straight forward.</p>
+<p>First lets set up our channel for reading a thermocouple. A Type K thermocouple has an approximate sensitivity of 41 µV/°C and a range of −200 °C to +1350 °C, therefore we are looking at a voltage output of roughly -8 mV to +55 mV. To use the full range of a Type K thermocouple we will set the gain to 32. This gives us a range of ±78.125 mV. In setup() we need to do the following for each channel that we will be using to read a thermocouple.</p>
+<pre><code class="language-cpp">int ch = 0;  //Channel thermocouple is on
+ad7794.setBipolar(ch, true);
+ad7794.setGain(ch, 32);  // ±78.125 mV
+ad7794.setEnabled(ch, true);
+</code></pre>
+<p>Now we need to measure our cold junction temperature. For this example we will use the temperature sensor built in to the AD7794. For many applications this will work fine. If you need more accuracy, you can calibrate the onboard sensor against an external reference thermometer, or you could use an additional external digital temp sensor.</p>
+<pre><code class="language-cpp">//Reading channel 6 returns the temperature
+//from the onboard sensor in degrees C  
+adcTemperature = adc.read(6);
+</code></pre>
+<p>Next we calculate the the voltage offset for the cold junction compensation.</p>
+<pre><code class="language-cpp">//Calculate the reference voltage for the cold junction 
+float referenceVoltage = Thermocouple_Ktype_TempToVoltageDegC(adcTemperature);
+</code></pre>
+<p>Then we read the voltage and convert to temperature.</p>
+<pre><code class="language-cpp">float reading = Thermocouple_Ktype_VoltageToTempDegC(adc.read(i) + referenceVoltage);
+</code></pre>
+<p>If reading multiple thermocouples, we already have our cold junction reference voltage so all we have to do is repeat the last line for each channel we have a thermocouple on. For example, If all 6 channels are being used for thermocouples we can just do this.</p>
+<pre><code class="language-cpp">for(int i=0; i &lt; 6; i++){
+    readings[i] = Thermocouple_Ktype_VoltageToTempDegC(adc.read(i) + referenceVoltage);
+}
+</code></pre>
+<h2 id="potentiometers">Potentiometers</h2>
+<p><a href="https://en.wikipedia.org/wiki/Potentiometer">Potentiometers</a> are a variable resistor generally consisting of a resistive element and a "wiper" that moves along that resistive element. This creates a voltage divider that varies the voltage that is read on the wiper. They are extremely common and you have almost certainly used one before. There are some very high quality, precise potentiometers out there that can be excellent for some displacement sensing applications. They can be great for long term, low power applications as long as you turn off the excitation voltage, they consume no power at all. They are however not well suited for high cycle applications because the contact between the wiper and the resistive element can wear out.</p>
+<p>I have used string potentiometers, or "string pots" (also called "draw-wire" sensors) for many tests and structural monitoring projects over the years.</p>
+<p>Potentiometers are very easy to read with the AD7794 FeatherWing. All you need is a short bit of jumper wire to connect the GND terminal to the S- terminal.</p>
+<p><img alt="Potentiometer wiring" src="../img/Pot_Wiring.png" />
+<em>Potentiometer wiring</em></p>
+<p>The output voltage range will be 0.0 to 2.5 V, so we will need to set the appropriate AIN channel on the AD7794 to Unipolar mode and a gain of 1 to read it properly.</p>
+<pre><code class="language-cpp">int ch = 0;  //Channel potentiometer sensor is on
+ad7794.setBipolar(ch, false);
+ad7794.setGain(ch, 1);
+ad7794.setEnabled(ch, true);
+</code></pre>
+<p>After that, we just read the voltage.</p>
+<pre><code class="language-cpp">float rawVolts = ad7794.read(ch);
+</code></pre>
+<p>If we are just reading a regular old potentiometer, the voltage might be all we are trying to measure, or we might calibrate it for some specific measurement. However If we are reading an off the shelf displacement sensor, it will probably have a scaling factor rated in UNIT/V/V (where UNIT is inches or millimeters). This is basically handled in the same way as the full bridge example above.</p>
+<pre><code class="language-cpp">float voltsToUnits(float vIn, float vEx, float scaleFactor){   
+   return (vIn / vEx) * scaleFactor;
+ }
+</code></pre>
+<hr />
+<p><strong>Tags:</strong> bias resistor, completion resistor, full bridge, load cell, quarter bridge, strain gauge, thermocouple, wheatstone bridge</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.path"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

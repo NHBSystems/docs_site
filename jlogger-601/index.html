@@ -1,0 +1,1523 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://https:/nhbsystems.github.io/test_site/jlogger-601/">
+      
+      
+        <link rel="prev" href="../6-channel-featherwing/">
+      
+      
+        <link rel="next" href="../analog_sensors/">
+      
+      
+      <link rel="icon" href="../img/NHB_Site_Icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>JLogger 601 - Docs & Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#jlogger-601" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Docs &amp; Blog" class="md-header__button md-logo" aria-label="Docs & Blog" data-md-component="logo">
+      
+  <img src="../img/logo_title_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs & Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              JLogger 601
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../6-channel-featherwing/" class="md-tabs__link">
+          
+  
+  
+  Docs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../analog_sensors/" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Docs &amp; Blog" class="md-nav__button md-logo" aria-label="Docs & Blog" data-md-component="logo">
+      
+  <img src="../img/logo_title_white.png" alt="logo">
+
+    </a>
+    Docs & Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Docs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-channel-featherwing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6 channel, 24 bit Analog Featherwing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    JLogger 601
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    JLogger 601
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Specifications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pinouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pinouts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pinouts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-internal-pin-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Internal Pin Connections
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arduino-ide-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arduino IDE Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required Libraries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Required Libraries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-will-also-want-one-or-more-of-the-following-for-radio-support-depending-on-your-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      You will also want one or more of the following for radio support, depending on your need
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-sketches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Sketches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Sketches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testing-the-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing the Hardware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beelan-lorawan-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      BeeLan LoRaWan Library
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BeeLan LoRaWan Library">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript-encodedecode-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript Encode/Decode Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#todo-lmic-lorawan-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      TODO: LMIC LoRaWan Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analog_sensors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reading Analog Sensors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Specifications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pinouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pinouts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pinouts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-internal-pin-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Internal Pin Connections
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arduino-ide-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arduino IDE Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required Libraries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Required Libraries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-will-also-want-one-or-more-of-the-following-for-radio-support-depending-on-your-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      You will also want one or more of the following for radio support, depending on your need
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-sketches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Sketches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Sketches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testing-the-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing the Hardware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beelan-lorawan-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      BeeLan LoRaWan Library
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BeeLan LoRaWan Library">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript-encodedecode-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript Encode/Decode Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#todo-lmic-lorawan-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      TODO: LMIC LoRaWan Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="jlogger-601">JLogger-601</h1>
+<!-- *By Jaimy | November 19, 2020* -->
+
+<p><img alt="JLogger 601" src="../img/JL601_1.png" /></p>
+<h2 id="description">Description</h2>
+<p>I really wanted a go-to device for remotely monitoring a variety of sensors. I often need to monitor and log data from precision analog sensors like strain gauges, load cells, potentiometers, and thermocouples; as well as digital sensors over I2C and serial. I also usually have to do this in some pretty remote places where power may not be available, or is unreliable.</p>
+<p>This board is designed for ultra low power, long term remote monitoring using LoRaWan (or raw packet radio) for long range communication. It utilizes the ubiquitous SAMD21G18 microcontroller because it's low power, well supported, and stable. Of course it is also Arduino compatible and can be used with the Arduino IDE by installing the board support package and required libraries.</p>
+<blockquote>
+<p><strong>Note:</strong> This documentation is currently a work in progress but I wanted to get the basics posted. I will continue to plug in details and plan to do walkthroughs of a couple more examples.</p>
+</blockquote>
+<h4 id="basic-specifications">Basic Specifications</h4>
+<ul>
+<li>6 differential 24-bit analog inputs with programmable gain amplifier (1 to 128)</li>
+<li>Sockets for custom input modules on each precision analog input channel</li>
+<li>MOSFET controlled 3.3V output to shut down power to external digital sensors</li>
+<li>2.5V Excitation voltage can be enabled/disabled in code to save power with analog sensors</li>
+<li>14 μA sleep current</li>
+<li>4 high speed 12-bit analog inputs (3.3V)</li>
+<li>1 x 12-bit analog output (3.3V) (shared pin with AIN0)</li>
+<li>Expansion headers</li>
+<li>Onboard LiPo charger (with trace-jumper to disable charging to allow for non-LiPo batteries)</li>
+<li>Onboard EUI-64 MAC IC</li>
+<li>SAMD21 microcontroller (Arduino Zero/M0 compatible)</li>
+<li>Optional RFM95 LoRa radio module</li>
+<li>Micro SD card slot</li>
+<li>Real Time Clock with battery backup</li>
+<li>USB-C connector for programming and charging</li>
+</ul>
+<h2 id="pinouts">Pinouts</h2>
+<p>External connections include 6 precision analog input groups in addition to standard IO and communication terminals and the usual 2 mm JST battery connector.</p>
+<p><img alt="External connections diagram" src="../img/601_Doc_External_Crop-1.png" /></p>
+<p>There are also internal expansion headers for digital IO and a 10 pin SWD debug header along with sockets for analog input modules that can be used for additional signal conditioning like bridge completion, bias resistors, or filtering. A few of the expansion header pins are shared with the external connections. The I²C SDA and SCL lines are shared so that a "shield" type add on board can have access to the I²C bus. The A0/DAC line is also shared so that the DAC can be accessed internally if needed.</p>
+<p><img alt="Internal connections diagram" src="../img/601_Doc_Internal_Crop.png" /></p>
+<hr />
+<h4 id="summary-of-internal-pin-connections">Summary of Internal Pin Connections</h4>
+<p>Pins for the onboard hardware interfaces have #defines in the board support package. Below is a summary of the defined names, and their corresponding Arduino IDE pin number.</p>
+<table>
+<thead>
+<tr>
+<th>Peripheral Pin</th>
+<th>Defined in BSP</th>
+<th>Pin #</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RFM95 Chip Select</td>
+<td>PIN_RFM_CS</td>
+<td>2</td>
+</tr>
+<tr>
+<td>RFM95 Reset</td>
+<td>PIN_RFM_RST</td>
+<td>27</td>
+</tr>
+<tr>
+<td>RFM95 DIO0</td>
+<td>PIN_RFM_DIO_0</td>
+<td>7</td>
+</tr>
+<tr>
+<td>RFM95 DIO1</td>
+<td>PIN_RFM_DIO_1</td>
+<td>38</td>
+</tr>
+<tr>
+<td>AD7794 Chip Select</td>
+<td>PIN_AD7794_CS</td>
+<td>6</td>
+</tr>
+<tr>
+<td>AD7794 Data Ready</td>
+<td>PIN_AD7794_RDY</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Excitation Enable</td>
+<td>PIN_EX_EN</td>
+<td>26</td>
+</tr>
+<tr>
+<td>Blue LED</td>
+<td>PIN_BLUE_LED</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Bus Voltage Monitor</td>
+<td>PIN_BUS_V</td>
+<td>A5</td>
+</tr>
+<tr>
+<td>Switched 3.3V Enable</td>
+<td>PIN_SW_3V_EN</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="arduino-ide-support">Arduino IDE Support</h2>
+<p>In the Arduino IDE click <em>File-&gt;Preferences-&gt;Settings</em></p>
+<p><img alt="Arduino IDE settings" src="../img/Arduino_Settings_BM_URL.png" /></p>
+<p><img alt="Arduino IDE board manager URL field" src="../img/Arduino_Settings_BM_URL_All.png" /></p>
+<p>Paste in the following URL to tell the boards manager where to find json file</p>
+<p><a href="https://nhbsystems.github.io/nhb_arduino_boards/package_NHBSys_index.json">https://NHBSystems.github.io/nhb_arduino_boards/package_NHBSys_index.json</a></p>
+<p>Now you can go into the Arduino Boards Manager, find the JLogger support package, and install it.</p>
+<p><img alt="Board manager installation" src="../img/Capture.jpg" /></p>
+<p>Once installed, you may want to select the board and upload the blink example sketch to check that things are working.</p>
+<h2 id="required-libraries">Required Libraries</h2>
+<p>Additionally you will need to install some libraries to use the onboard hardware, some may depend on how you intend to use the JLogger. In the future I hope to include some of this functionality into an all in one library similar to what Adafruit did for their Circuit Playground boards. Everything except the RadioHead library is available in the Arduino library manager.</p>
+<h4 id="required">Required</h4>
+<ul>
+<li>RTCZero</li>
+<li>NHB_AD7794</li>
+<li>Adafruit_SPIFlash (will also install Adafruit fork of SDFat)</li>
+<li>extEEPROM</li>
+</ul>
+<h4 id="you-will-also-want-one-or-more-of-the-following-for-radio-support-depending-on-your-need">You will also want one or more of the following for radio support, depending on your need</h4>
+<ul>
+<li><a href="https://www.airspayce.com/mikem/arduino/RadioHead/">RadioHead</a></li>
+<li>MCCI LMIC LoRaWan Library</li>
+<li>Beelan LoRaWAN</li>
+<li><em>Some other library?</em></li>
+</ul>
+<h2 id="example-sketches">Example Sketches</h2>
+<p>Additional hardware specific examples are provided for LMIC and Beelan LoRaWan libraries. I hope to add a nice example for RadioHead in the future, but I know the standard examples will work fine as long as you set the pin mappings. The JLogger_601_Test_All example shows the basics of using the onboard hardware and can be used to check that everything is working. It also can be configured to use the RadioHead library to check that an RFM95 (or RFM69) is present and working.</p>
+<p>The example sketches can be cloned or downloaded from this repository: <a href="https://github.com/NHBSystems/JLogger-601-Examples">https://github.com/NHBSystems/JLogger-601-Examples</a></p>
+<h3 id="testing-the-hardware">Testing the Hardware</h3>
+<p>The <em>JLogger_601_Test_All</em> example is nice way to see initialization and basic use of the JLogger's hardware.</p>
+<p>If you have installed the RadioHead library, you can uncomment the appropriate <em>HAS_RFMxx_RADIO</em> line near the top of the file. The example will simply try to initialize the radio and set the frequency to check that the radio is present and working. It does not do any actual communication.</p>
+<pre><code class="language-cpp">//#define HAS_RFM95_RADIO       // You must have the Radiohead library installed.
+//#define HAS_RFM69_RADIO
+#define RFM_FREQUENCY  915.00   // If testing radio, set frequency for your region
+</code></pre>
+<p>If for some reason you would like to skip testing any of the other hardware, you can comment out any of the following lines and the test will be skipped.</p>
+<pre><code class="language-cpp">#define HAS_24AA025E64_CHIP     // Included on all boards now
+#define TEST_FLASH  
+#define TEST_LEDS
+#define TEST_AD7794
+#define TEST_SW3V
+</code></pre>
+<p>The tests are all run in setup() and will do the following.</p>
+<ol>
+<li>The sketch will flash a fun pattern with all the LEDs (except the charge indicator of course).</li>
+<li>Test the MOSFET controlled 3.3V output (SW_3V) by switching it on for 2 seconds. You can use a voltmeter or connect an LED to verify that its working.</li>
+<li>If you have the RadioHead library installed and have enabled the radio test, the example will then try to initialize the radio and set the frequency.</li>
+<li>Test the 24AA025E64 EUI &amp; EEPROM chip. The sketch will read the EUI, format it, and print it out to serial. (You may want to write it down somewhere if setting up LoRaWan later)</li>
+<li>Test the SPI Flash storage. Uses the Adfruit_SPIFlash library to read the JEDEC ID and flash size from the device and print them out to serial.</li>
+<li>Test the AD7794 ADC. Uses the NHB_AD7794 library to initialize the AD7794 and read all 6 channels plus the onboard temperature sensor.</li>
+</ol>
+<h3 id="beelan-lorawan-library">BeeLan LoRaWan Library</h3>
+<p>The <em>JLogger-601_LoraWan_Example-BeelanLib</em> example should help you get started with LoRaWAN using the <a href="https://github.com/BeelanMX/Beelan-LoRaWAN">Beelan LoRaWAN library</a> and OTAA activation. It's a nice little library for a simplified application that just needs to get data to the server and maybe receive some downlinks. It however does not handle MAC commands and is not fully compliant with the LoRaWAN specification. This doesn't matter to much for many applications, especially if you are running your own server. This example also shows how to put JLogger to sleep between readings, and processing downlink commands.</p>
+<p>The library can be installed from the Arduino library manager or cloned/downloaded from it's GitHub repository (linked above). As I write this, the example has been tested with version 1.5.1.</p>
+<p>Near the top of the sketch there is a #define for the default sleep interval (in Seconds) that you can change if you would like the logger to start up with a different interval. If using a third party LoRaWAN server (e.g. The Things Network) be sure to respect their fair use or traffic policies.</p>
+<pre><code class="language-cpp">#define DEFAULT_INTERVAL    30     //Interval we start at
+</code></pre>
+<p>A few lines below that you will find the OTAA credentials. The devEUI will be provided by the onboard 24AA025E64 MAC chip, however <strong>you must change</strong> the appEUI and appKey values to those used for your application. I use a private Chirpstack server which does not use an appEUI. The Things Network on the other hand does use it and will generate the value for you. A detailed guide to setting up the server side is beyond the scope of this guide but you can find information on setting up a new device on The Things Network <a href="https://www.thethingsnetwork.org/docs/devices/registration.html">here</a>, and setting up a device on Chirpstack <a href="https://www.chirpstack.io/application-server/use/applications/">here</a>. I may do a more detailed post on setting these up in the future (especially Chirpstack) but for now I'm going to assume that you have access to a LoRaWAN server.</p>
+<pre><code class="language-cpp">//// OTAA credentials /////////////////////////////
+char devEui[16];  //WE will fill this with EUI from 24AA025E64 chip
+/**************** YOU NEED TO SET THESE! *********/
+const char *appEui = &quot;0000000000000000&quot;; //Chirpstack doesn't need this, but need for TTN
+const char *appKey = &quot;00000000000000000000000000000000&quot;; //&lt;- You need to change this
+</code></pre>
+<p>A little further down we set the pin mapping between the library and the JLogger-601. If you are adapting the example to use with other hardware you will have to change these.</p>
+<pre><code class="language-cpp">//Pin mapping for JLogger 601
+const sRFM_pins RFM_pins = {
+  .CS = PIN_RFM_CS,      //2,
+  .RST = PIN_RFM_RST,    //27,
+  .DIO0 = PIN_RFM_DIO_0, //7,
+  .DIO1 = PIN_RFM_DIO_1, //38,
+  .DIO2 = 255, //Not connected
+  .DIO5 = 255, //Not connected
+};
+</code></pre>
+<h4 id="setup">Setup</h4>
+<p>In setup() we start with the following line to enable proper float support for the sprintf() function.</p>
+<pre><code class="language-cpp">asm(&quot;.global _printf_float&quot;); // Enable sprintf float support
+</code></pre>
+<p>If SERIAL_DEBUG has been defined the sketch will just sit and wait for a serial connection at this point, and then set the analog read resolution to 12 bit. This is the SAMD21 analog, not the AD7794. In this example it is used for measuring bus/battery voltage.</p>
+<p>Now we initialize the 24AA025E64 MAC chip..</p>
+<pre><code class="language-cpp">//Initialize the 24AA025E64 
+  uint8_t eepStatus = eep.begin(eep.twiClock400kHz);   //go fast!
+  if (eepStatus) {
+    #ifdef SERIAL_DEBUG
+      Serial.print(F(&quot;extEEPROM.begin() failed, status = &quot;));
+      Serial.println(eepStatus);
+    //while (1);
+    #endif
+  }
+</code></pre>
+<p>.. Then read the EUI64 and convert it to a C style string of HEX numbers. This is the format required by the Beelan library but it also makes it easier to print out nicely.</p>
+<pre><code class="language-cpp">//Read the EUI
+  eep.read(EUI64_MAC_ADDR, eui, EUI64_MAC_LENGTH); 
+
+  //...And convert it to a HEX string
+  char buf[3];
+  for(int i=0;i&lt;8;i++){
+    sprintf(buf, &quot;%02x&quot;,eui[i]);   
+    devEui[i*2] = buf[0];
+    devEui[i*2 + 1] = buf[1];
+  }
+  devEui[16] = 0; //NULL Termination
+
+  #ifdef SERIAL_DEBUG
+    Serial.print(F(&quot;devEUI: &quot;));
+    Serial.println(devEui);
+  #endif
+</code></pre>
+<p>Next we initialize the RTC library and sync <em>nextAlarmSec</em> and <em>nextAlarmMin</em> to the rtc time. These variables are used to schedule the next wake up time for each sleep cycle. Note that the RTC is not set to the actual time in this example, we are just using it to keep track time intervals so the absolute time doesn't really matter.</p>
+<pre><code class="language-cpp"> //Initialize RTC
+  rtc.begin();
+
+  //Set  to actual time here if needed
+
+  nextAlarmSec = rtc.getSeconds();
+  nextAlarmMin = rtc.getMinutes();
+</code></pre>
+<p>Then initialize the AD7794 and configure the channels. In this example we set all 6 channels to bipolar mode and a gain of 128. This would be appropriate for most bridge type sensors.</p>
+<pre><code class="language-cpp">  // Initialize the AD7794
+  // Setup for bridge type sensors (e.g. load cell or pressure gauge)
+  // Set update rate to 19.6, 90 dB noise rejection at 60 Hz
+  // Set bipolar mode
+  // Set set all channels to a gain of 128
+  adc.begin();
+  adc.setUpdateRate(16.6); //&lt; Slow, but 16.6Hz rate enables 50/60hz noise rejection
+  for(int i=0; i &lt; 6; i++){
+    adc.setBipolar(i,true);
+    //delay(2);
+    adc.setGain(i, 128);
+    //delay(2);
+    adc.setEnabled(i,true);
+    //delay(2);
+  }
+</code></pre>
+<p>Now initialize the radio. If this fails, the code just enters an infinite loop and blinks the built in red LED since there is no point in continuing on.</p>
+<pre><code class="language-cpp">//Initialize radio and LoRaWAN
+  if(!lora.init()){
+    #ifdef SERIAL_DEBUG
+      Serial.println(&quot;RFM95 not detected&quot;);
+    #endif
+    delay(1000);
+    while(1){
+      //Just freak out
+      digitalWrite(LED_BUILTIN,LOW);
+      delay(500);
+      digitalWrite(LED_BUILTIN,HIGH);
+      delay(1000);
+    }    
+  }
+</code></pre>
+<p>.. Setup the LoRaWAN parameters. We are a going to be Class A device and we set the modulation to Spread Factor 7, 125 KHz bandwidth. This should be fine for experimenting around the house (probably a lot further) and will hog less airtime. If you are going for longer ranges, you may wish to change this. Just keep in mind that a larger Spread Factor will increase time on air.</p>
+<pre><code class="language-cpp">// Set LoRaWAN Class change CLASS_A or CLASS_C
+  lora.setDeviceClass(CLASS_A);
+
+  // Set Data Rate
+  lora.setDataRate(SF7BW125);
+
+  // set channel to random
+  lora.setChannel(MULTI);
+
+  // Put OTAA Key and DevAddress here
+  lora.setDevEUI(devEui);
+  lora.setAppEUI(appEui);
+  lora.setAppKey(appKey);
+</code></pre>
+<p>.. And try to join the network. The sketch will endlessly attempt to join every 5 seconds until successful. This is probably way to short an interval but this is just an example. Once joined execution moves on to our main loop.</p>
+<pre><code class="language-cpp">//Join procedure
+  bool isJoined;
+  do {
+    #ifdef SERIAL_DEBUG
+      Serial.println(&quot;Joining...&quot;);
+    #endif 
+    isJoined = lora.join();
+
+    //wait for 5s to try again
+    delay(5000);
+  }while(!isJoined);
+
+  #ifdef SERIAL_DEBUG
+    Serial.println(&quot;Joined to network&quot;);
+  #endif
+</code></pre>
+<h4 id="main-loop">Main Loop</h4>
+<p>The main program loop is pretty straightforward. Basically we read the analog inputs, pack up the data, send it out, and go to sleep. All sensor readings are stored in the float array <em>readings[]</em>.</p>
+<p>First we turn on the 2.5V excitation voltage to power connected bridge sensors</p>
+<pre><code class="language-cpp">digitalWrite(PIN_EX_EN,LOW); //Turn on excitation
+</code></pre>
+<p>Then read the bus voltage.</p>
+<pre><code class="language-cpp">readings[0] = getBusVoltage();
+</code></pre>
+<p>The <em>getBusVoltage()</em> function a little more complicated than you might expect due to the high source impedance of the 1Meg resistors I used in the voltage divider. Many of the development boards out there use 100k or even 10k resistors in a voltage divider to measure battery voltage. The problem with this is that it is a terrible waste of power for long term battery powered applications. I used 1M resistors to reduce that power drain down to around 2 uA, however this causes significant errors in the ADC readings because the default ADC configuration can't handle such high source impedance. The workaround is to change the ADC configuration to a much slower conversion rate that can handle the high impedance, take the reading, and then change it back. Here is the function</p>
+<pre><code class="language-cpp">float getBusVoltage(){
+
+  //Increase the sample period to increase allowable
+  //source impedance
+  REG_ADC_SAMPCTRL = ADC_SAMPCTRL_SAMPLEN(32);
+  while (ADC-&gt;STATUS.bit.SYNCBUSY == 1);
+
+  //Take the reading
+  float val = ((analogRead(PIN_BUS_V) * 3.3) / 4096) *2;
+
+  //Now put it back to reset value
+  REG_ADC_SAMPCTRL = ADC_SAMPCTRL_SAMPLEN(0);
+  while (ADC-&gt;STATUS.bit.SYNCBUSY == 1);
+
+  return val;
+}
+</code></pre>
+<p>Of course this isn't 100% necessary if you just want to know if you are running out of batteries soon. It should also be noted that bus voltage is measured after a Schottky diode when running on battery, so the voltage will read ~0.2V lower than the actual battery voltage</p>
+<p>Next we read the AD7794. We read the on-chip temperature sensor first. Calling read on channel 6 will return the temperature reading in Degrees C. Then we loop through channels 0-5 to get our 6 24bit analog readings and turn the excitation back off to save power.</p>
+<pre><code class="language-cpp">  //Read AD7794 chip temperature
+  readings[1] = adc.read(6);
+
+  //Read 6 ADC channels
+  for(int i=0; i &lt; 6; i++){
+    readings[i+2] = adc.read(i);
+  }
+  digitalWrite(PIN_EX_EN,HIGH); //Turn off excitation
+</code></pre>
+<p>And now we can send the readings out. This example takes a "Keep It Simple" approach to sending out the data. I simply <em>memcpy()</em> the <em>readings</em> array into <em>sendBuffer</em> and then send it out. You have to be aware of <a href="https://en.wikipedia.org/wiki/Endianness">endianness</a>, but this is for a specific architecture, and you have to provide your own JavaScript decode function on the server side anyway.</p>
+<pre><code class="language-cpp">//Pack it up...
+memcpy(sendBuffer, readings, sizeof(readings)); 
+
+//...and ship it out  
+lora.sendUplink(sendBuffer, sizeof(sendBuffer), 0,1);  //This function has changed to include the mport arg
+                                                       //in the 1.5+ Version of the library. 
+
+//lora.sendUplink(sendBuffer, sizeof(sendBuffer), 0);  //Earlier library versions
+</code></pre>
+<p><em>The decode/encode functions to use with this example are provided in comments at the end of the code, and will be listed later in this post.</em></p>
+<p>Next we update the LoRaWAN state machine..</p>
+<pre><code class="language-css">lora.update();
+</code></pre>
+<p>.. and check to see if we have a downlink message. If we did call <em>parseDownlink()</em> to handle it and then blink the blue LED to show that we received a downlink message.</p>
+<pre><code class="language-cpp">// Get reply and parse ///////////////////// 
+  recvStatus = lora.readData(recvBuffer);      
+
+  if(recvStatus) {
+    parseDownlink(recvBuffer);
+
+    //Blink LED to show we got a downlink
+    digitalWrite(PIN_BLUE_LED,LOW);
+    delay(500);
+    digitalWrite(PIN_BLUE_LED,HIGH);
+  }
+</code></pre>
+<p>The <em>parseDownlink()</em> function is provided as an example of how you can handle commands sent from your application. The first byte of the buffer sent be the server/application is the "command byte" and the rest is payload. The meaning of the payload will depend on the command. This allows for up to 255 commands. On the server/application side an encode function will take a JSON formatted command and convert it to a compatible byte array. There is just one command in this example, which sets the tx/sleep interval, but you could easily add more by following the pattern.</p>
+<pre><code class="language-cpp">void parseDownlink(char * buf){
+
+  //Struct to represent simple message
+  struct dlMessage_t{
+    uint8_t   cmd;
+    uint8_t   payload[32]; //Need to look into actual appropriate max payload size
+  } message;
+
+  memset(message.payload,0,sizeof(message.payload));  
+  memcpy(&amp;message, buf, sizeof(buf));
+
+  //Debug info
+  #ifdef SERIAL_DEBUG
+    Serial.print(F(&quot;Message received [ &quot;));
+    Serial.print(F(&quot;cmd: &quot;));
+    Serial.print(message.cmd,HEX);
+    Serial.print(F(&quot; Payload: &quot;));
+    for(int i=0;i&lt;sizeof(message.payload);i++){
+      Serial.print(message.payload[i],HEX);
+      Serial.print(' ');
+    }
+    Serial.println(&quot; ]&quot;);
+  #endif
+
+  // We only have one command for now, but more can be added
+  // easily with additional if() statements.
+
+  // Set the transmit interval
+  if(message.cmd == DLCMD_SET_RATE){
+
+    //We got it! 
+    digitalWrite(PIN_BLUE_LED,LOW);
+    delay(1000);
+    digitalWrite(PIN_BLUE_LED,HIGH);
+
+    uint16_t arg1; 
+    arg1 =  message.payload[1] | message.payload[0] &lt;&lt; 8 ;    
+
+    #ifdef SERIAL_DEBUG
+      Serial.print(&quot;arg1 = &quot;);
+      Serial.println(arg1,BIN);
+    #endif
+
+    //TODO: Set sleep interval here 
+    if((arg1 &gt;= MIN_INTERVAL) &amp;&amp; (arg1 &lt; MAX_INTERVAL)){
+      sleepInterval = arg1;
+      //Just re-sync these whenever we change the interval to avoid timing issues
+      nextAlarmSec = rtc.getSeconds();
+      nextAlarmMin = rtc.getMinutes();
+
+      #ifdef SERIAL_DEBUG
+        Serial.print(F(&quot;Set inteval to &quot;));
+        Serial.println(arg1);
+      #endif
+    }
+
+  }else{
+    //Unknown command
+    #ifdef SERIAL_DEBUG
+      Serial.println(F(&quot;Unknown command&quot;));
+    #endif
+
+  }
+
+}
+</code></pre>
+<p><em>Note: Normally you could do the same thing with the port field in the LoRaWAN packet instead of creating your own command byte, but the Beelan library doesn't support extracting ports from the downlink message (yet?)</em></p>
+<p>Once we have dealt with any downlinks we are ready to go back to sleep. First we calculate the minutes and seconds for when we want to wake up based on our interval. The example is written for intervals of less than 1Hr (3600 sec), but it could be extended to handle larger intervals</p>
+<pre><code class="language-cpp"> nextAlarmSec = (nextAlarmSec + (sleepInterval % 60)) % 60;
+ nextAlarmMin = (nextAlarmMin + (sleepInterval / 60)) % 60;
+</code></pre>
+<p>Then we set up the RTC alarm and attach the interrupt so we will wake from sleep when the alarm goes off.</p>
+<pre><code class="language-javascript"> if(sleepInterval &lt;= 60){
+    rtc.setAlarmSeconds(nextAlarmSec);    
+    rtc.enableAlarm(rtc.MATCH_SS); 
+  }else{
+    rtc.setAlarmSeconds(nextAlarmSec);  
+    rtc.setAlarmMinutes(nextAlarmMin);
+    rtc.enableAlarm(rtc.MATCH_MMSS);
+  }
+
+  rtc.attachInterrupt(rtcAlarm);
+</code></pre>
+<p>.. and now we turn off the lights and go to sleep. (If SERAIL_DEBUG is defined we just fake it)</p>
+<pre><code class="language-cpp"> digitalWrite(LED_BUILTIN,LOW); 
+  #ifdef SERIAL_DEBUG
+    Serial.println(F(&quot;Going to (Fake) sleep now&quot;));
+    delay(sleepInterval * 1000);
+    Serial.println(F(&quot;Good morning!&quot;));
+  #else
+    RFM_Sleep(); // Beelan library doesn't put the radio to sleep so do it manually
+
+    //rtc.standbyMode(); // &lt;-- Doesn't handle SysTick properly 
+
+    goToSleep(); // Safe sleep function. Could probably also use ArduinoLowPower library    
+  #endif  
+  digitalWrite(LED_BUILTIN,HIGH); //Waste of power, but this is just an example
+</code></pre>
+<p>The Beelan library doesn't put the RFM95 radio to sleep so we have to do it manually with the <em>RFM_Sleep()</em> function which looks like this.</p>
+<pre><code class="language-cpp">void RFM_Sleep(){
+
+    //Borrowed from the RadioHead library
+    const uint8_t RH_RF95_MODE_SLEEP      = 0x00;
+    const uint8_t RH_RF95_REG_01_OP_MODE  = 0x01;
+    const uint8_t RH_SPI_WRITE_MASK       = 0x80;
+
+    //Set NSS pin Low to start communication
+    digitalWrite(PIN_RFM_CS,LOW);
+
+    //Send Addres with MSB 1 to make it a write command
+    SPI.transfer(RH_RF95_REG_01_OP_MODE | RH_SPI_WRITE_MASK);
+    //Send Data
+    SPI.transfer(RH_RF95_MODE_SLEEP);
+
+    //Set NSS pin High to end communication
+    digitalWrite(PIN_RFM_CS,HIGH);
+}
+</code></pre>
+<p>Also, there is bug with the RTCZero library on the SAMD21 that will eventually cause it to lock up and not recover from sleep mode. The issue and solution are documented <a href="https://community.atmel.com/comment/2625116#comment-2625116">here</a>. Because of this I put the microcontroller to sleep manually with the goToSleep() function which properly handles the SysTick interrupt.</p>
+<pre><code class="language-cpp">void goToSleep(){
+  bool restoreUSBDevice = false;
+
+ //Try to handle attached USB gracefully
+  if (SERIAL_PORT_USBVIRTUAL) {
+    USBDevice.standby();
+  } else {
+    USBDevice.detach();
+    restoreUSBDevice = true;
+  }
+
+  //Disable SysTick interupt
+  SysTick-&gt;CTRL &amp;= ~SysTick_CTRL_TICKINT_Msk;
+
+  //Go to sleep
+  SCB-&gt;SCR |= SCB_SCR_SLEEPDEEP_Msk;
+  __DSB();
+  __WFI();
+  //Code starts here after waking
+
+  //Reenable systick interrupt
+  SysTick-&gt;CTRL |= SysTick_CTRL_TICKINT_Msk;
+
+  if (restoreUSBDevice) {
+    USBDevice.attach();
+  }  
+}
+</code></pre>
+<p><em>You could also use the <a href="https://github.com/arduino-libraries/ArduinoLowPower/blob/master/src/samd/ArduinoLowPower.cpp">ArduinoLowPower</a> library as the SysTick fix was added into it's sleep method in May of 2019 and is now essentially the same as the code above.</em></p>
+<p>And that's it, the sketch will just keep repeating that cycle.</p>
+<h4 id="javascript-encodedecode-functions">JavaScript Encode/Decode Functions</h4>
+<p>Example Javascript Decode/Encode functions for Chirpstack. This will also work for TTN but you have to change the decode signature slightly to <em>Decoder(bytes, port)</em></p>
+<p>The <em>bytesToFloat()</em> function comes from <a href="https://www.thethingsnetwork.org/forum/t/decode-float-sent-by-lopy-as-node/8757/2">here</a>. It is used to convert a group of 4 bytes into a float. It's pretty simplistic doesn't and do anything to handle weird stuff like NaNs, but it's fine for this example. (I have run it for months without any issues)</p>
+<pre><code class="language-javascript">function bytesToFloat(bytes) {
+  // JavaScript bitwise operators yield a 32 bits integer, not a float.
+  // Assume LSB (least significant byte first).
+  var bits = bytes[3]&lt;&lt;24 | bytes[2]&lt;&lt;16 | bytes[1]&lt;&lt;8 | bytes[0];
+  var sign = (bits&gt;&gt;&gt;31 === 0) ? 1.0 : -1.0;
+  var e = bits&gt;&gt;&gt;23 &amp; 0xff;
+  var m = (e === 0) ? (bits &amp; 0x7fffff)&lt;&lt;1 : (bits &amp; 0x7fffff) | 0x800000;
+  var f = sign * m * Math.pow(2, e - 150);
+  return f;
+
+  // The &quot;bias&quot; value, which is documented to be 127 for 32 bits single-precision 
+  // IEEE-754 floating point, has been replaced by 150 in m * Math.pow(2, e - 150). 
+  // This is effectively m × 2-23 × 2e-127 a.k.a. (m / 223) × 2e-127, and is a nice 
+  // optimization to get the 24th implicit leading bit in the &quot;mantissa&quot;.
+}  
+</code></pre>
+<p>The <em>Decode()</em> function is specifically for this example and will decode raw bytes into a JSON object containing battery voltage, temperature, and all 6 AIN channels from the AD7794. If using Chirpstack the signature is <em>Decode(fPort, bytes)</em>, if TTN the signature is <em>Decoder(bytes, port)</em>.</p>
+<pre><code class="language-javascript">//function Decoder(bytes, port) {   // For The Things Network
+function Decode(fPort, bytes){   //For Chirpstack
+  var payloadObj = {&quot;BattVoltage&quot;:&quot;&quot;,
+                    &quot;Temperature&quot;:&quot;&quot;,
+                    &quot;Ch_0&quot;:&quot;&quot;,
+                    &quot;Ch_1&quot;:&quot;&quot;,
+                    &quot;Ch_2&quot;:&quot;&quot;,
+                    &quot;Ch_3&quot;:&quot;&quot;,
+                    &quot;Ch_4&quot;:&quot;&quot;,
+                    &quot;Ch_5&quot;:&quot;&quot;};
+
+  //var floats = new Float32Array(2);
+  var b = 0;
+  payloadObj.BattVoltage = bytesToFloat(bytes.slice(b, b+=4));
+  payloadObj.Temperature = bytesToFloat(bytes.slice(b, b+=4));
+  payloadObj.Ch_0 = bytesToFloat(bytes.slice(b, b+=4));
+  payloadObj.Ch_1 = bytesToFloat(bytes.slice(b, b+=4));
+  payloadObj.Ch_2 = bytesToFloat(bytes.slice(b, b+=4));
+  payloadObj.Ch_3 = bytesToFloat(bytes.slice(b, b+=4));
+  payloadObj.Ch_4 = bytesToFloat(bytes.slice(b, b+=4));
+  payloadObj.Ch_5 = bytesToFloat(bytes.slice(b, b+=4));
+
+  return payloadObj;
+}
+</code></pre>
+<p>Finally, the <em>Encode()</em> function will take a JSON formatted command/argument pair and convert it to the 1 byte command value, and a 2 byte (uint_16) argument. (The syntax will be covered further down)</p>
+<pre><code class="language-javascript">function Encode(fPort, obj) {
+  var bytes = [];
+
+  bytes[0] = obj.command &amp; 0xFF;
+
+  bytes[1] = (obj.arg1 &gt;&gt; 8) &amp; 0xFF;
+  bytes[2] = obj.arg1 &amp; 0xFF;
+
+  return bytes; 
+}
+</code></pre>
+<p>If using Chirpstack, the functions need to be pasted into the CODEC section in your device profile.</p>
+<p><img alt="Chirpstack codec configuration" src="../img/image-3.png" /></p>
+<p>If using The Things Network you add the encode and decode functions under Payload Formats in your application.</p>
+<p><img alt="TTN decoder configuration" src="../img/ttn_decoder_page-1024x746.png" /></p>
+<p>In this example there is only one valid command which is to change the TX interval. The byte value for the command is defined as 1 and it takes one argument, the interval in seconds. To set the TX interval to 60 seconds, the syntax to send the command would look like this.</p>
+<pre><code class="language-json">{&quot;command&quot;: 1, &quot;arg1&quot;: 60}
+</code></pre>
+<p>Here is what it looks like in the Chirpstack Application Server web interface (found at Applications-&gt;YourApp-&gt;Devices-&gt;YourDevice)</p>
+<p><img alt="Chirpstack downlink interface" src="../img/image-1.png" /></p>
+<p>And this is The Things Network console</p>
+<p><img alt="TTN console interface" src="../img/image-2-1024x359.png" /></p>
+<hr />
+<h3 id="todo-lmic-lorawan-example">TODO: LMIC LoRaWan Example</h3>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.path"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
