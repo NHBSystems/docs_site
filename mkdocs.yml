@@ -1,7 +1,43 @@
-site_name: Test Site
+site_name: Docs & Blog
 site_url: http://https://nhbsystems.github.io/test_site
 nav:
   - Home: index.md
-  - About: about.md
+  #- About: about.md
+  #- Reading Analog Sensors: analog_sensors.md
+  - Docs:
+    - 6 channel, 24 bit Analog Featherwing: 6-channel-featherwing.md
+    - JLogger 601: jlogger-601.md
+  - Blog:
+    #- blog/index.md
+    - analog_sensors.md
 theme:
     name: material
+
+    logo: img/logo_title_white.png
+    favicon: img/NHB_Site_Icon.png
+    features:
+      - navigation.tabs
+      - navigation.path
+
+    palette:
+    # Palette toggle for light mode    
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode        
+           
+
+    # Palette toggle for dark mode    
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+  - blog:
+      archive: false
+      categories: false
+
